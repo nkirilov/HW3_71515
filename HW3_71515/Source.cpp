@@ -4,8 +4,10 @@
 //Windows 8.1 Pro 64bit
 #include<iostream>
 
+
 int main()
 {
+	
 	system("pause");
 	return 0;
 }
