@@ -72,6 +72,7 @@ void Researcher::Research()
 		//input parameters
 		do
 		{
+			std::cout << "Enter test parameters: ";
 			std::cin >> numberOfNames >> numberOfOperations;
 			if (numberOfNames > 1000000 || numberOfOperations>500000)
 			{
@@ -86,6 +87,7 @@ void Researcher::Research()
 			Names[j] = new char[9];
 		}
 		//input names
+		std::cout << "Enter Names: ";
 		for (size_t j = 0; j < numberOfNames; j++)
 		{
 			std::cin >> Names[j];
@@ -95,7 +97,9 @@ void Researcher::Research()
 		//sort
 		MergeSort(Names, numberOfNames);
 		unsigned startRange = 0, endRange = numberOfNames - 1;
+		std::cout << "Entered range [" << startRange << "," << endRange << "]" << std::endl;
 		//input and run operations
+		std::cout << "Start entering comands " << std::endl;
 		for (size_t j = 0; j < numberOfOperations; j++)
 		{
 			char buffer[6];
@@ -106,6 +110,7 @@ void Researcher::Research()
 			{
 				std::cin >> startRange;
 				std::cin >> endRange; 
+				std::cout << "Entered range ["<<startRange<<","<<endRange<<"]"<<std::endl;
 			}
 			else if (strcmp(buffer, "QUERY") == 0)//execute query
 			{
@@ -119,7 +124,7 @@ void Researcher::Research()
 						count++;
 					}
 				}
-				std::cout << count << std::endl;
+				std::cout <<"Number of names that start with "<<compare<<" is : "<< count << std::endl;
 				count = 0;
 			}
 			else//incase of wrong input

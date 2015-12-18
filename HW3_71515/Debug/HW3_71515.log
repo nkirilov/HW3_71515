@@ -1,4 +1,4 @@
-﻿Build started 18.12.2015 г. 13:41:43.
+﻿Build started 18.12.2015 г. 14:08:26.
      1>Project "C:\Users\Nikolay\documents\visual studio 2015\Projects\HW3_71515\HW3_71515\HW3_71515.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Researcher.cpp
@@ -24,4 +24,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.75
+Time Elapsed 00:00:01.13

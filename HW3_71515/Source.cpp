@@ -8,6 +8,7 @@
 int main()
 {
 	unsigned tests;
+	std::cout << "Enter number of tests: ";
 	std::cin >> tests;
 	Researcher r(tests);
 	r.Research();
